@@ -1,0 +1,121 @@
+html{
+	height: 100%;
+	box-sizing: border-box
+}
+
+.strona{
+	margin: auto;
+    padding: 0px;
+    width: 1020px;
+}
+
+#header{
+	width: 1020px;
+	height: 130px;
+}
+
+#logo{
+	width: 130px;
+	height: 96px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 50px;
+	transition: transform 0.3s;
+}
+
+#logo:hover{
+	transform: scale(1.10);
+	transform:rotate(-10deg)
+}
+
+input:hover{
+	border-color: #93b6c3;
+}
+
+a {
+	color: black;
+	text-decoration: none
+}
+
+#menu{
+	width: 100%;
+	height: 79px;
+	font-size: 20px;
+}
+
+ul{
+	width: 1020px;
+	margin: auto;
+}
+
+ul li{
+	
+	float: left;
+	padding-left: 50.5px;
+	padding-right: 50.5px;
+	padding-top: 22.5px;
+	padding-bottom: 22.5px;
+	border-top: 1px solid #93b6c3;
+	border-bottom: 1px solid #93b6c3;
+	background-color: white;
+}
+
+ul li:hover{
+	margin-top: -7px;
+	padding-top: 28.5px;
+	padding-bottom: 28.5px;
+	
+}
+
+#menu2{
+	margin-top: 7px;
+	border-top: 1px solid #93b6c3;
+	border-bottom: 1px solid #93b6c3;
+	height: 65px;
+}
+
+------------------------------------------------
+
+
+.zawartosc1{
+	margin: 0 auto;
+	width: 550px;
+	text-align: center;
+}
+
+.zawartosc2{
+	margin: 0 auto;
+	width: 280px;
+	text-align: center;
+}
+
+.zawartosc3{
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#kopia{
+	width: 620px;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.etykieta{
+	float: left;
+	width: 50px;
+}
+
+.top{
+	margin-top: 10px;
+}
+
+.right{
+	margin-right: 10px;
+}
+
+.link{
+color: #93b6c3;
+opacity: 0.9;
+}

@@ -28,7 +28,27 @@ class ParagonController extends Controller
  
  	}
 
+ 	public function test()
+ 	{
+ 		if($warunek)
+ 		{
+ 			//costam
+ 			return $zmienna;
+ 		} else
+ 		{
+ 			//costam
+ 			return $zmienna2;
+ 		}	
 
+ 	}
+	
+	public function test2()
+ 	{
+		if(!$warunek) return $zmienna2;
+ 		
+ 			//costam
+ 			return $zmienna;
+ 	}
 
  	
  	public function zapiszParagon() 

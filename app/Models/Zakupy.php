@@ -12,6 +12,7 @@ class Zakupy extends Model
 	
 	public function ZakupyDoParagonu()
 	{
+		//tu jest ok
 		return $this->belongsTo('App\Models\Paragony', 'Paragon', 'Id');
 	}
 	

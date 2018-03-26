@@ -19,4 +19,9 @@ class Paragony extends Model
 	{
 		return $this->hasMany('App\Models\Zakupy', 'Paragon', 'Id');
 	}
+
+	public function Paragon()
+	{
+		return $this->belongsTo(Paragon::class, 'Paragon');
+	}
 }

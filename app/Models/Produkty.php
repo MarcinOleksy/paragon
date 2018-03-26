@@ -22,6 +22,6 @@ class Produkty extends Model
 	
 	public function ProduktyDoZakupy()
 	{
-		return $this->belongsTo('App\Models\Zakupy');
+		return $this->belongsTo('App\Models\Zakupy', 'Id', 'Produkt');
 	}
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<title>Tytul strony</title>
@@ -35,13 +35,6 @@
 			znacznik4.value = "1";
 			znacznik4.className = 'top right';
 			
-			var znacznik5 = document.createElement('span');
-			znacznik5.innerHTML = "Cena: ";
-			
-			var znacznik6 = document.createElement('input');
-			znacznik6.setAttribute('type', 'test');
-			znacznik6.setAttribute('name', 'cena[]');
-			znacznik6.className = 'top right';
 			
 			var znacznik7 = document.createElement('input');
 			znacznik7.setAttribute('type', 'button');
@@ -53,13 +46,12 @@
 			row.appendChild(znacznik2);
 			row.appendChild(znacznik3);
 			row.appendChild(znacznik4);
-			row.appendChild(znacznik5);
-			row.appendChild(znacznik6);
 			row.appendChild(znacznik7);
 			kontener.appendChild(row);
 		}
 		
 		function usun(row)
+
 		{
 			row.parentNode.parentNode.removeChild(row.parentNode);
 		}
@@ -88,7 +80,7 @@
 				<li><a href="/wollet"> Stan zasilenia </a></li>
 				<li><a href="/paragon"> Wprowadzanie paragonu </a></li>
 				<li><a href="sprawdzanie.html">  Sprawdzanie paragonu </a></li>
-				<li><a href="/lista"> Lista Zakupów </a></li>
+				<li><a href="lista.html"> Lista Zakupów </a></li>
 			</ul>
 			<div id="menu2">
 			</div>
@@ -96,11 +88,7 @@
 		<div class="strona">
 		
 			<div class="zawartosc1">
-				<form action="/zapiszParagon" method="post" class="zawartosc1">
-					<div class="zawartosc2">					
-						<div class="top"><div class="etykieta">Sklep:</div><input type="test" id="sklep" name="sklep" onclick="selectText(this.name)"/></div>
-						<div class="top"><div class="etykieta">Data:</div><input type="data" id="data" name="data" placeholder='rok-miesiac-dzien' /></div>
-					</div>
+				<form action="/zapiszLista" method="post" class="zawartosc1">
 					<div id="kopia">
 						<div class="row">
 							

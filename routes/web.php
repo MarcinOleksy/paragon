@@ -26,5 +26,12 @@ Route::prefix('shop')->group(function () {
 
 Route::get('/wollet', 'WolletController@index');
 
+
 Route::get('/paragon', 'ParagonController@index');
-Route::any('/zapisz', 'ParagonController@zapiszParagon');
+Route::any('/zapiszParagon', 'ParagonController@zapiszParagon');
+
+
+Route::get('/lista', 'ListaController@index');
+Route::any('/zapiszLista', 'ListaController@zapiszLista');
+
+

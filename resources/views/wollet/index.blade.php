@@ -16,8 +16,8 @@
         var data = google.visualization.arrayToDataTable([
           ['Task', 'Hours per Day'],
       @if(count($products))
-        @foreach($products as $product)
-         [' {{ $product[0] }}',  {{ $product[1] }} ],
+        @foreach($products as $label => $value)
+         [' {{ $label  }}',  {{ $value }} ],
       @endforeach
       @else
        Nie ma kurwa danych
@@ -45,8 +45,8 @@
 		</div>
 			<div id="menu">
 				<ul>
-					<li><a href="portfel.php"> Stan zasilenia </a></li>
-					<li><a href="zapisywanie.html"> Wprowadzanie paragonu </a></li>
+					<li><a href="/wollet"> Stan zasilenia </a></li>
+					<li><a href="/paragon"> Wprowadzanie paragonu </a></li>
 					<li><a href="sprawdzanie.html"> Sprawdzanie paragonu </a></li>
 					<li><a href="lista.html"> Lista Zakupow </a></li>
 				</ul>
@@ -55,9 +55,11 @@
 			</div>
 
 		<div class="strona">
-			<P>Budżet przeznaczony:{{ $products[1][1]+$products[0][1] }}</P>
-			<P>Wydane:{{ $products[0][1] }}</P>
-			<P>Wolne:{{ $products[1][1] }} </P>
+			<P>Budżet:{{$Kwota}}</P>
+			@foreach($products as $label => $value)
+			<P>{{$label}}:{{$value}}</P>
+			@endforeach
+
 			<div id="piechart" style="width: 900px; height: 500px; margin: 0 auto;"></div>
 		</div>
 </body>

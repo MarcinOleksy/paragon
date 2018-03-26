@@ -18,6 +18,42 @@ class ParagonController extends Controller
  	{	
  		return view('paragon.index');
  	}
+<<<<<<< HEAD
+=======
+
+ 	public function zapiszParagon2(Request $request)
+ 	{
+ 		$sklep = strtoupper(Request::input('sklep'));
+ 		$data = Request::input('data');
+ 		$towar = array_map('strtoupper', Request::input('towar'));
+ 		$ile = Request::input('ile');
+		$cena = str_replace(",",".", Request::input('cena'));
+ 
+ 	}
+
+ 	public function test()
+ 	{
+ 		if($warunek)
+ 		{
+ 			//costam
+ 			return $zmienna;
+ 		} else
+ 		{
+ 			//costam
+ 			return $zmienna2;
+ 		}	
+
+ 	}
+	
+	public function test2()
+ 	{
+		if(!$warunek) return $zmienna2;
+ 		
+ 			//costam
+ 			return $zmienna;
+ 	}
+
+>>>>>>> 2bcac35b4777ddb7949cab1ca325c72fa6bdbbf3
  	
  	public function zapiszParagon() 
  	{

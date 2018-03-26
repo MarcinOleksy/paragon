@@ -55,7 +55,11 @@
 			</div>
 
 		<div class="strona">
+<<<<<<< HEAD
 			<P>Budżet:{{$Kwota}}</P>
+=======
+			<P>Budżet przeznaczony:{{ $products[;]+$products[0][1] }}</P>
+>>>>>>> 2bcac35b4777ddb7949cab1ca325c72fa6bdbbf3
 			@foreach($products as $label => $value)
 			<P>{{$label}}:{{$value}}</P>
 			@endforeach
